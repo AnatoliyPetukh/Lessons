@@ -13,10 +13,10 @@ static class Car {
 }
 
  static class CarTest{
-    void changeDoor(Car c1, int d){
-    c1.door=d;
+    public void changeDoor(Car c1, int d){
+        c1.door=d;
     }
-    void changeColor(Car a, Car b){
+    public void changeColor(Car a, Car b){
         String c=b.Color;
         b.Color=a.Color;
         a.Color=c;
@@ -24,7 +24,7 @@ static class Car {
 }
 
     public static void main(String[] args) {
-    CarTest ct = new CarTest();
+        CarTest ct = new CarTest();
         Car car1 = new Car("black","V6",4);
         Car car2 = new Car("white","V8",2);
         ct.changeDoor(car1,2);
